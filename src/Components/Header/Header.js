@@ -7,26 +7,16 @@ const Header = () => (
         <Grid fluid className="contenedorTitle">
             <Row>
                 <Col className="col" xs={12} md={4} lg={4}>
-
-
                 </Col>
                 <Col className="col" xs={12} md={4} lg={4}>
-
-                    <span  className="imagenLogo"></span>
-
+                    <span className="imagenLogo"></span>
                 </Col>
                 <Col className="col" xs={12} md={4} lg={4}>
-
-
                 </Col>
-
             </Row>
         </Grid>
-
-        <div>
-
+        <div className="contenedorMenu">
             <nav>
-
                 <ul>
                     <li>
                         <h4 className="tituloHeader">Personajes</h4>
@@ -39,11 +29,8 @@ const Header = () => (
                     </li>
                 </ul>
             </nav>
-
-
         </div>
     </div>
 );
-
 
 export default Header;

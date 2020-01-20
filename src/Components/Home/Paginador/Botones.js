@@ -1,17 +1,13 @@
 
-import { STAR_WARS_PERSONS_NUMBER } from "../../../Services/swapi.services";
 import React, { Fragment } from "react";
-import { useQuery } from "@apollo/react-hooks";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-import { Grid, Row } from 'react-flexbox-grid';
 import PropTypes from "prop-types";
-
-
+import { Grid, Row } from 'react-flexbox-grid';
+import { useQuery } from "@apollo/react-hooks";
+import { STAR_WARS_PERSONS_NUMBER } from "../../../Services/swapi.services";
 import './styles.css';
-
-
 
 const Botones = ({ onSelectedLocation }) => {
 
@@ -43,7 +39,7 @@ const Botones = ({ onSelectedLocation }) => {
 }
 
 Botones.propTypes = {
-    onSelectedLocation: PropTypes.func,
+    onSelectedLocation: PropTypes.func.isRequired,
 }
 
 export default Botones;

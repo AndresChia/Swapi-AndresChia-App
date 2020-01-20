@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
-
+import PropTypes from "prop-types";
 
 const Peliculas = ({ films }) => {
-
     const datosPeliculas = films.map((film) => {
         return (
             <li onClick="">
@@ -11,18 +10,17 @@ const Peliculas = ({ films }) => {
         )
     }
     );
-
     return (
         <Fragment>
             <ul>
                 {datosPeliculas}
             </ul>
-
         </Fragment>
     );
+}
 
-
-
+Peliculas.propTypes = {
+    onSelectedLocation: PropTypes.array.isRequired,
 }
 
 export default Peliculas;

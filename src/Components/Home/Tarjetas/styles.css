@@ -68,6 +68,10 @@
     color: #FFCC56;
 }
 
+.MuiCircularProgress-root.MuiCircularProgress-indeterminate{
+    margin-top: 40px;
+}
+
 .paginador{
     justify-content: center;
 }
