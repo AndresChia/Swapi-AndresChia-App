@@ -12,7 +12,7 @@ const Header = () => (
                 </Col>
                 <Col className="col" xs={12} md={4} lg={4}>
 
-                    <a href="https://www.google.com" className="imagenLogo"></a>
+                    <span  className="imagenLogo"></span>
 
                 </Col>
                 <Col className="col" xs={12} md={4} lg={4}>

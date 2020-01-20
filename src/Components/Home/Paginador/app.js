@@ -1,5 +1,5 @@
 
-import { STAR_WARS_PERSONS_NUMBER } from "../../Services/swapi.services";
+import { STAR_WARS_PERSONS_NUMBER } from "../../../Services/swapi.services";
 import React, { Fragment } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import CircularProgress from '@material-ui/core/CircularProgress';

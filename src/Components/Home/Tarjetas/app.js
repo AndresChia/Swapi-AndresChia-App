@@ -1,5 +1,5 @@
 
-import { STAR_WARS_PERSONS } from "../../Services/swapi.services";
+import { STAR_WARS_PERSONS } from "../../../Services/swapi.services";
 import React, { Fragment } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Grid, Row, Col } from 'react-flexbox-grid';

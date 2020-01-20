@@ -5,13 +5,12 @@ const Peliculas = ({ films }) => {
 
     const datosPeliculas = films.map((film) => {
         return (
-            <li>
+            <li onClick="">
                 <h5>{film.title}</h5>
             </li>
         )
     }
     );
-
 
     return (
         <Fragment>

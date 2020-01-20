@@ -1,6 +1,6 @@
 @font-face {
     font-family: d-din;
-    src: url('./../../assets/fonts/d-din/D-DINExp-Bold.otf');   
+    src: url('./../../../assets/fonts/d-din/D-DINExp-Bold.otf');   
 }
 
 
@@ -21,21 +21,29 @@
     height: 153px;
 }
 
-.contenedorTarjetas:hover{
+/* .contenedorTarjetas:hover{
     cursor: pointer;
-}
+} */
 
-.contenedorTarjetas .contenedorImage h5:hover{
-    transform: scale(1.05);
+.contenedorTarjetas .contenedorImage li:hover{
+    transform: scale(1.09);
+    z-index: +99999;
 }
 
 .contenedorImage{
+    overflow: hidden;
     width: 100%;
     line-height: 100px;
     height: 100px;
     border-radius: 5px;
     padding: 5px;
     box-sizing: border-box;
+}
+
+
+.contenedorImage li{
+    height: 82px;
+    background-color: black;
 }
 
 .contenedorTitulo{

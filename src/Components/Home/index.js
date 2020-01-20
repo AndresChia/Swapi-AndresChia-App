@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { ApolloProvider } from "@apollo/react-hooks";
-import { client } from "./../Services/swapi.services";
+import { client } from "../../Services/swapi.services";
 import  Tarjetas  from "./Tarjetas/app";
 import  Botones  from './Paginador/app';
 
