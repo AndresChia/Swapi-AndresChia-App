@@ -9,7 +9,9 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 const PeliculasData = ({ id }) => {
     const { loading, error, data } = useQuery(STAR_WARS_FILM(id));
     if (loading) return (
-        <CircularProgress size={60} thickness={7} color="inherit" />
+        <div className="divCargar">
+            <CircularProgress size={60} thickness={7} color="inherit" />
+        </div>
     );
     if (error) return <p>There's an error: {error.message}</p>;
 

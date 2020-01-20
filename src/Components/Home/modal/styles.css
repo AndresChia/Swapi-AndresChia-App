@@ -69,3 +69,10 @@ fade {
       transform: rotateX(25deg) translateZ(-2500px);
     }
   }
+
+  .divCargar{
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
