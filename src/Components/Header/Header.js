@@ -19,18 +19,16 @@ const Header = () => (
         <div className="contenedorMenu">
             <nav>
                 <ul>
-                    <li className="liMenu">
+                    <li className="liMenu disponible">
                         <Link to="/personajes">
                             <h4 className="tituloHeader">Personajes</h4>
                         </Link>
                     </li>
-                    <li  className="liMenu">
-                        <Link to="/filmes">
+                    <li  className="liMenu noDisponible">
                             <h4 className="tituloHeader">Filmes</h4>
-                        </Link>
                     </li>
-                    <li  className="liMenu">
-                        <h4 className="tituloHeader">hola</h4>
+                    <li  className="liMenu noDisponible">
+                        <h4 className="tituloHeader">Proximamente</h4>
                     </li>
                 </ul>
             </nav>
