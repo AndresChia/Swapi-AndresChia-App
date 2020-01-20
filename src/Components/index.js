@@ -4,7 +4,8 @@ import Home from './Home';
 import Header from './Header/Header';
 
 
-function Principal() {
+
+const Principal = () =>  {
     return (
         <div className="App">
             <div className="headerComponent">

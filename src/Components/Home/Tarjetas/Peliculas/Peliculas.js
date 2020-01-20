@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
+import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 
 const Peliculas = ({ films }) => {
-    const datosPeliculas = films.map((film) => {
+    const datosPeliculas = films.map(({id,title},index) => {
         return (
-            <li key={film.id}>
-                <h5>{film.title}</h5>
+            <li key={id}>
+                <Link to={`/personajes/${id}`}>
+                    <h5>{title}</h5>
+                </Link>
             </li>
         )
     }

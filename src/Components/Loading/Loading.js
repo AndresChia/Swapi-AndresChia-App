@@ -5,8 +5,10 @@ import './styles.css';
 
 
 const Loading = () => {
+
+
     return (
-        <>
+        <div className="contenedorLoading">
             <p className="loading">Cargando</p>
             <div className="scene">
                 <div className="wrap">
@@ -24,10 +26,14 @@ const Loading = () => {
                     <div className="wall wall-back"></div>
                 </div>
             </div>
-        </>
+        </div>
     )
 
+
+
 }
+
+
 
 
 export default Loading;
