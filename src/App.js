@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
-// import Loading from './Components/Loading';
-import Home from './Components/Home';
-import Header from './Components/Header/Header';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Principal from "./Components/index"
 
-function App() {
-  return (
-    <div className="App">
-      <div className="headerComponent">
-        <Header></Header>
-      </div>
-      <div className="homeComponent">
-        <Home ></Home>
-      </div>
-    </div>
-  );
-}
+
+const App = () => (
+  <BrowserRouter>
+    <Fragment>
+      <Route path="/" component={Principal}></Route>
+      <Route path="/Home" component={Principal}></Route>
+    </Fragment>
+  </BrowserRouter>
+)
+
+
+
+
 
 export default App;

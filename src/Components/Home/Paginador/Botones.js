@@ -39,7 +39,7 @@ const Botones = ({ onSelectedLocation }) => {
 }
 
 Botones.propTypes = {
-    onSelectedLocation: PropTypes.func.isRequired,
+    onSelectedLocation: PropTypes.func,
 }
 
 export default Botones;

@@ -73,7 +73,6 @@ const Tarjetas = ({ pagina }) => {
   const personas = data.allPersons.map(({ name: namePerson, id: idPerson, gender: genderPerson, films }) => {
     // { id: idFilm, director, title, planets: { id: idPlanet, name: namePlanet } }
     return (
-      <>
         <Col key={idPerson} xs={12} md={6}>
           <div className="contenedorTarjetas">
             <div className="contenedorTitulo">
@@ -84,7 +83,6 @@ const Tarjetas = ({ pagina }) => {
             </div>
           </div>
         </Col>
-      </>
     )
   }
   );
@@ -101,7 +99,7 @@ const Tarjetas = ({ pagina }) => {
 }
 
 Tarjetas.propTypes = {
-  pagina: PropTypes.number.isRequired,
+  pagina: PropTypes.number,
 }
 
 export default Tarjetas;

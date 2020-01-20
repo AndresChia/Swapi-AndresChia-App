@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Peliculas = ({ films }) => {
     const datosPeliculas = films.map((film) => {
         return (
-            <li onClick="">
+            <li key={film.id}>
                 <h5>{film.title}</h5>
             </li>
         )
@@ -20,7 +20,7 @@ const Peliculas = ({ films }) => {
 }
 
 Peliculas.propTypes = {
-    onSelectedLocation: PropTypes.array.isRequired,
+    onSelectedLocation: PropTypes.array,
 }
 
 export default Peliculas;
