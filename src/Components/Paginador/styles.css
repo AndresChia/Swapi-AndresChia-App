@@ -1,0 +1,15 @@
+.MuiButtonGroup-root{
+    background-color: #ffffffce;
+    color: #fbfafa;
+    box-shadow: inset 0 0 5px 0px black;
+}
+
+.MuiButtonGroup-root button{
+  
+    box-shadow: inset 0 0 5px 0px black;
+}
+
+.MuiButtonGroup-root button.activeBoton{
+    background-color: rgba(0, 0, 0, 0.63);
+    color: blanchedalmond;
+  }

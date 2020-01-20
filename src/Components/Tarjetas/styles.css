@@ -1,0 +1,84 @@
+@font-face {
+    font-family: d-din;
+    src: url('./../../assets/fonts/d-din/D-DINExp-Bold.otf');   
+}
+
+
+.contenedorTarjetas{
+    width: calc(100% - 20px);
+    padding: 0;
+    font-family: 'd-din',Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+    margin: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    min-width: 350px;
+    box-sizing: border-box;
+    border: solid #FFCC56;
+    border-width: 3px;
+    background-color: black;
+    border-radius: 27px;
+    height: 153px;
+}
+
+.contenedorTarjetas:hover{
+    cursor: pointer;
+}
+
+.contenedorTarjetas .contenedorImage h5:hover{
+    transform: scale(1.05);
+}
+
+.contenedorImage{
+    width: 100%;
+    line-height: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.contenedorTitulo{
+    width: 100%;
+    height: 43px;
+    text-align: left;
+    padding-left: 10px;
+    color: cornsilk;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+
+.contenedorTitulo h1{
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'd-din', Helvetica, sans-serif;
+    line-height: 48px;
+}
+
+.MuiCircularProgress-circle.MuiCircularProgress-circleIndeterminate{
+    color: #FFCC56;
+}
+
+.paginador{
+    justify-content: center;
+}
+
+.contenedorTitulo h4{
+    color: antiquewhite;
+    position: absolute;
+    line-height: 16px;
+}
+
+.contenedorTitulo ul{
+    display: grid;
+}
+
+h5{
+    font-family: 'd-din', Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    color: #999;
+    text-transform: uppercase;
+    line-height: 14px;
+}

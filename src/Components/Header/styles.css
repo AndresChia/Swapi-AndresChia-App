@@ -1,0 +1,117 @@
+.imagenLogo{
+    display: block;
+    top: 50%;
+    width: 100%;
+    max-width: 203px;
+    height: 100%;
+    max-height: 88px;
+    margin: -44px auto 0;
+    box-sizing: border-box;
+    background-image: url(https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png);
+    background-size: contain;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorHeader{
+    width: 100%;
+    height: 203px;
+    position: relative;
+}
+
+.col{
+    height: 150px;
+}
+
+nav{
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    background-color: #000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    border-top: 1px solid #343434;
+    border-bottom: 1px solid #343434;
+    -moz-transition: border-width 200ms;
+    transition: border-width 200ms;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    
+    position: relative;
+    vertical-align: top;
+    z-index: -1;
+    box-sizing: border-box;
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 0;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0;
+}
+
+li{
+
+    display: table-cell;
+    width: auto;
+    margin: 0;
+    vertical-align: top;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    width: -webkit-fill-available;
+}
+
+li a{
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.contenedorTitle{
+    background-image: url(../../assets/images/banner.jpg);
+}
+
+
+
+@font-face {
+    font-family: d-din;
+    src: url('./../../assets/fonts/d-din/D-DINExp-Bold.otf');   
+}
+
+li h4{
+    font-family: 'd-din', Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    color: #999;
+    text-transform: uppercase;
+    line-height: 9px;
+}
+
+li:hover{
+    cursor: pointer;
+    position: relative;
+    z-index: +9999;
+}
+
+li:hover h4.tituloHeader{
+    transform: scale(1.1);
+}
+
+nav{    
+    position: absolute;
+    z-index: +99999;
+}
