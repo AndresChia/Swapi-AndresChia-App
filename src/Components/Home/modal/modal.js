@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { ApolloProvider } from "@apollo/react-hooks";
-import { client } from "../../Services/swapi.services";
-import Tarjetas from "./Tarjetas/Tarjetas";
-import Botones from "./Paginador/Botones"
+
 
 class Modal extends Component {
     constructor() {
@@ -10,15 +7,13 @@ class Modal extends Component {
         this.state = {
             pagina: 0
         };
+        
     }
-
 
     render() {
 
-
-        return (null)
+        return(<div></div>)
     }
-
 
 }
 
