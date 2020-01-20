@@ -63,7 +63,7 @@ ul{
     padding: 0;
 }
 
-li{
+li.liMenu{
 
     display: table-cell;
     width: auto;
@@ -75,7 +75,7 @@ li{
     width: -webkit-fill-available;
 }
 
-li a{
+li.liMenu a{
     display: block;
     position: relative;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ li a{
     src: url('./../../assets/fonts/d-din/D-DINExp-Bold.otf');   
 }
 
-li h4{
+li.liMenu h4{
     font-family: 'd-din', Helvetica, sans-serif;
     font-size: 16px;
     position: relative;
@@ -101,17 +101,17 @@ li h4{
     line-height: 9px;
 }
 
-li:hover{
+li.liMenu:hover{
     cursor: pointer;
     position: relative;
-    z-index: +9999;
+    z-index: +2;
 }
 
-li:hover h4.tituloHeader{
+li.liMenu:hover h4.tituloHeader{
     transform: scale(1.1);
 }
 
 nav{    
     position: absolute;
-    z-index: +99999;
+    z-index: +1;
 }

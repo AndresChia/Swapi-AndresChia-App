@@ -19,17 +19,17 @@ const Header = () => (
         <div className="contenedorMenu">
             <nav>
                 <ul>
-                    <li>
+                    <li className="liMenu">
                         <Link to="/personajes">
                             <h4 className="tituloHeader">Personajes</h4>
                         </Link>
                     </li>
-                    <li>
+                    <li  className="liMenu">
                         <Link to="/filmes">
                             <h4 className="tituloHeader">Filmes</h4>
                         </Link>
                     </li>
-                    <li>
+                    <li  className="liMenu">
                         <h4 className="tituloHeader">hola</h4>
                     </li>
                 </ul>

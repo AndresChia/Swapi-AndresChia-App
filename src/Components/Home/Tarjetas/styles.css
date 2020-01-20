@@ -27,7 +27,7 @@
 
 .contenedorTarjetas .contenedorImage li:hover{
     transform: scale(1.09);
-    z-index: +99999;
+    z-index: +2;
 }
 
 .contenedorImage{

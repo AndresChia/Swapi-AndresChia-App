@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Peliculas = ({ films }) => {
     const datosPeliculas = films.map(({id,title},index) => {
         return (
-            <li key={id}>
+            <li className="liMenu" key={id}>
                 <Link to={`/personajes/${id}`}>
                     <h5>{title}</h5>
                 </Link>

@@ -19,7 +19,7 @@ export const STAR_WARS_FILMS = gql`
   }`;
 
 
-  
+
 export const STAR_WARS_PERSONS_NUMBER = gql`{
     _allPersonsMeta{
       count
@@ -27,9 +27,9 @@ export const STAR_WARS_PERSONS_NUMBER = gql`{
   }
 `
 
-export const STAR_WARS_PERSONS = (pagina)=> gql`
+export const STAR_WARS_PERSONS = (pagina) => gql`
  {
-  allPersons(first: 10,skip:${pagina*10}, orderBy: name_ASC) {
+  allPersons(first: 10,skip:${pagina * 10}, orderBy: name_ASC) {
     name,
     id,
     gender,
@@ -47,5 +47,24 @@ export const STAR_WARS_PERSONS = (pagina)=> gql`
 }`;
 
 
-
-
+export const STAR_WARS_FILM = (id) => gql`
+{
+  Film(id:"${id}")   {
+      episodeId
+      title
+      releaseDate
+      director
+      producers
+      planets{
+        name
+      }
+      id
+      characters{
+       name
+      }
+      openingCrawl
+      createdAt
+      director
+  }
+}
+`;
